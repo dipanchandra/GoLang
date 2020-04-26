@@ -1,3 +1,4 @@
-It is a statically typed language
-It is a Compiled Language
-Supports Garbage collection
+It is a statically typed language, means variables must be of a specific type.
+It is a Compiled Language.
+Supports Garbage collection.
+It is closer toC that C# or Java both in terms of purpose as well as syntax.
