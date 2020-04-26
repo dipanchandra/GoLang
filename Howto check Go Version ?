@@ -1,3 +1,8 @@
 # How to Check version of Go lang?
 
 go version
+
+# Output:
+
+go version go1.6.4 linux/386
+
