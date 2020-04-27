@@ -1,0 +1,18 @@
+# Create the script "main.go" at yourworking location, say [/home/nabodip/student/golang/codes]
+
+ package main
+ 
+ func main() {
+	println("God is good and kind to all.")
+ }
+
+
+# On Terminal, change your'pwd'to where you are writing your code
+
+
+[nabodip@GyanHouse codes]$ pwd
+/home/nabodip/student/golang/codes
+
+[nabodip@GyanHouse codes]$ go run main.go
+God is good and kind to all.
+
