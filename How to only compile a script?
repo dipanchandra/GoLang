@@ -1,0 +1,3 @@
+# In order to just compile a script, use :
+
+go build main.go
