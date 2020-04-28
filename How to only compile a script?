@@ -1,3 +1,14 @@
 # In order to just compile a script, use :
 
 go build main.go
+
+# This will generate the executable with name "main", which can be directly run.
+# The location would be the same `pwd` :
+
+[nabodip@GyanHouse codes]$ pwd
+/home/nabodip/student/golang/codes
+
+[nabodip@GyanHouse codes]$ ls -lrth
+total 860K
+-rw-rw-r--. 1 nabodip nabodip   75 Apr 28 05:22 main.go
+-rwxrwxr-x. 1 nabodip nabodip 853K Apr 28 05:51 main
