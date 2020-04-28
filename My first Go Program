@@ -16,3 +16,5 @@
 [nabodip@GyanHouse codes]$ go run main.go
 God is good and kind to all.
 
+
+# "go run" will compile as well as run the code.
