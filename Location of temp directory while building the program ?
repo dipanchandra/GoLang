@@ -1,0 +1,74 @@
+# In order to check the location of temp directory by buliding the go program :
+
+[nabodip@GyanHouse codes]$ go run main.go
+God is good and kind to all.
+
+[nabodip@GyanHouse codes]$ go run --work main.go
+WORK=/tmp/go-build072511864
+God is good and kind to all.
+
+[nabodip@GyanHouse codes]$ ls  -ltrh /tmp/go-build072511864
+total 4.0K
+drwxrwxr-x. 3 nabodip nabodip   60 Apr 28 05:22 command-line-arguments
+-rw-rw-r--. 1 nabodip nabodip 1.7K Apr 28 05:22 command-line-arguments.a
+
+
+[nabodip@GyanHouse codes]$ ls -lrth  /tmp/go-build072511864
+total 4.0K
+drwxrwxr-x. 3 nabodip nabodip   60 Apr 28 05:22 command-line-arguments
+-rw-rw-r--. 1 nabodip nabodip 1.7K Apr 28 05:22 command-line-arguments.a
+
+[nabodip@GyanHouse codes]$ ls -lrth  /tmp/go-build072511864/command-line-arguments
+total 0
+drwxrwxr-x. 3 nabodip nabodip 60 Apr 28 05:22 _obj
+
+[nabodip@GyanHouse codes]$ ls -lrth  /tmp/go-build072511864/command-line-arguments/_obj
+total 0
+drwxrwxr-x. 2 nabodip nabodip 60 Apr 28 05:22 exe
+
+[nabodip@GyanHouse codes]$ ls -lrth  /tmp/go-build072511864/command-line-arguments/_obj/exe
+total 624K
+-rwxrwxr-x. 1 nabodip nabodip 621K Apr 28 05:22 main
+
+[nabodip@GyanHouse codes]$ ls -lrth  /tmp/go-build072511864/command-line-arguments/_obj/exe/main
+-rwxrwxr-x. 1 nabodip nabodip 621K Apr 28 05:22 /tmp/go-build072511864/command-line-arguments/_obj/exe/main
+
+[nabodip@GyanHouse codes]$ cat   /tmp/go-build072511864/command-line-arguments/_obj/exe/main
+�?Q�td�e*��@A`U} IX]�P"w"w`
+                                      X�8S�b
+                                               ��]�b
+������;v+�����o80c882e984380ae23fa36473767a5cb4fc30b903e��� x��`
+
+
+
+[nabodip@GyanHouse codes]$ cat  /tmp/go-build072511864/command-line-arguments.a
+!<arch>
+__.PKGDEF       0           0     0     644     126       `
+go object linux 386 go1.6.4 X:none
+build id "80c882e984380ae23fa36473767a5cb4fc30b903"
+
+$$
+package main
+	func @"".init ()
+
+$$
+_go_.o          0           0     0     644     1481      `
+go object linux 386 go1.6.4 X:none
+
+!
+��;v+����$�D$�������������������,
+                                    "runtime.printlockPgo.string."God is good and kind to all."V
+                                                                                                &runtime.printstring`
+                                                                                                                    runtime.printnlj
+      &runtime.printunlock|
+                          0runtime.morestack_noctxt'P$
+;Tgclocals·33cdeccccebe80329f1fdbee7f5874cbTgclocals·33cdeccccebe80329f1fdbee7f5874cbT/home/nabodip/student/golang/codes/m��;v/���t���u��e�
+                    �������������"".initdone·"".initdone·X
+                                                                "runtime.throwinit"".initdone·"".initdone·�
+                                                                                                               0runtime.morestack_noctxtPP
+                 P
++%Tgclocals·33cdeccccebe80329f1fdbee7f5874cbTgclocals·33cdeccccebe80329f1fdbee7f5874cbT/home/nabodip/student/golang/codes/main.go�Xgo.string.hdr."God is good and kind to all."Pgo.string."God is good and kind to all."�Pgo.string."God is good and kind to all."@:God is good and kind to all.�Tgclocals·33cdeccccebe80329f1fdbee7f5874cb�Tgclocals·33cdeccccebe80329f1fdbee7f5874cb�Tgclocals·33cdeccccebe80329f1fdbee7f5874cb�Tgclocals·33cdeccccebe80329f1fdbee7f5874cb�>"".initdone·type.uint8�"".main·"".main�"".init·"".init��go13ld[nabodip@GyanHouse codes]$ 
+[nabodip@GyanHouse codes]$ 
+[nabodip@GyanHouse codes]$ 
+
+
