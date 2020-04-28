@@ -12,3 +12,6 @@ go build main.go
 total 860K
 -rw-rw-r--. 1 nabodip nabodip   75 Apr 28 05:22 main.go
 -rwxrwxr-x. 1 nabodip nabodip 853K Apr 28 05:51 main
+
+
+# hence "go build" would be beneficial for deploying code, when you can move the exe binary to some other location.
