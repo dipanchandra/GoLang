@@ -1,0 +1,2 @@
+# In Go,function "main" within package "main" is the sole entry point to the program.
+# The actual code must be written inside "main" package.
