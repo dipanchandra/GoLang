@@ -1,5 +1,4 @@
-// Imports
-//--------
+// Imports:
 
 // The import keyword is used to declare the packages that are used by the code in the file.
 
@@ -29,6 +28,7 @@ Love you 3000
 [nabodip@GyanHouse codes]$ go run import_example.go 3000 Iron Man
 exit status 1
 
+// import example bad:
 // What if the Println line was:
 mt.println("Love you",os.Args[1]) 
 
