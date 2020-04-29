@@ -4,6 +4,7 @@
 # Let us modify the program "main.go" and create a new one called "main_error.go"
 
 <code>
+
 ```go
  package mains
  
@@ -11,6 +12,7 @@
 	println("God is good and kind to all.")
  }
  ```
+ 
 </code>
 
 # Now let us run it and see whar errors/messages we get:
