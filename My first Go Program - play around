@@ -1,0 +1,66 @@
+## Scenario 1:
+## ----------
+
+# Let us modify the program "main.go" and create a new one called "main_error.go"
+
+<code>
+ package mains
+ 
+ func main() {
+	println("God is good and kind to all.")
+ }
+</code>
+
+# Now let us run it and see whar errors/messages we get:
+
+[nabodip@GyanHouse codes]$ go build  main_error.go
+
+# The code just compiled, but there is no entry point to run it !!
+
+[nabodip@GyanHouse codes]$ go run main_error.go
+go run: cannot run non-main package
+
+[nabodip@GyanHouse codes]$ go main_error.go
+go: unknown subcommand "main_error.go"
+Run 'go help' for usage.
+
+[nabodip@GyanHouse codes]$ go main_error
+go: unknown subcommand "main_error"
+Run 'go help' for usage.
+
+[nabodip@GyanHouse codes]$ ls -alrth
+total 872K
+-rw-rw-r--. 1 nabodip nabodip   75 Apr 28 05:22 main.go
+-rwxrwxr-x. 1 nabodip nabodip 853K Apr 28 05:51 main
+-rw-rw-r--. 1 nabodip nabodip   76 Apr 29 06:56 main_error.go
+## No executable created as well.
+
+
+## Scenario 2:
+## ----------
+
+# Let us modify the program "main.go" and create a new one called "main_error.go"
+
+<code>
+ package mains
+ 
+ func mains() {
+	println("God is good and kind to all.")
+ }
+</code>
+
+# Now let us run it and see whar errors/messages we get:
+
+[nabodip@GyanHouse codes]$ go build  main_error.go 
+
+# The code just compiled, but there is no entry point to run it !!
+
+[nabodip@GyanHouse codes]$ go run main_error.go
+go run: cannot run non-main package
+
+[nabodip@GyanHouse codes]$ ls -lrth main_error*
+-rw-rw-r--. 1 nabodip nabodip 77 Apr 29 07:05 main_error.go
+
+## No executable created as well.
+
+
