@@ -1,13 +1,16 @@
 //Ha ha ...trust me,it was fun fixng this issue.
-//As perdocuments available on net, you just need to
+
+//The "godoc" command extracts and generates documentation for all locally installed Go programs,
+//both from your own code and the standard libraries.
+//As per documents available on net, you just need to :
 
 godoc -http=:6060
 
-//after it you need to visit the following from your browser:
+//after it you need to launch the local godoc web-server from your browser, by:
 
 http://localhost:6060
 
-//which should in turn show you documentation of various Go elements in its browser.
+//which should in turn show you documentation of various Go elements.
 
 [nabodip@GyanHouse ~]$ godoc -http=:6060 &
 [1] 3348
@@ -47,5 +50,8 @@ func Println(a ...interface{}) (n int, err error)
     standard output. Spaces are always added between operands and a newline is
     appended. It returns the number of bytes written and any write error
     encountered.
+
+//Anyhow, Godoc web-server will only display any sort of Documentation for your homegrown Go files, if and only if
+//a regular comment, without any blankline directly precedes the function/variable/package/type/constant's declaration.
 
 //So, just like other wise people, "install_godoc.go" was performed..
