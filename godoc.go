@@ -40,7 +40,7 @@ nabodip@GyanHouse ~]$ cd /home/nabodip/student/golang/codes;
 doc: found packages main (import_example.go) and mains (main_error.go) in /home/nabodip/student/golang/codes
 exit status 1
 
-//at the same time, the following worked from command prompt:
+//at the same time, go doc command-line tool worked from command prompt:
 [nabodip@GyanHouse ~]$ go doc fmt Println
 func Println(a ...interface{}) (n int, err error)
     Println formats using the default formats for its operands and writes to
