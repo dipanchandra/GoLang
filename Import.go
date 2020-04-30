@@ -1,11 +1,16 @@
 // Imports:
 
 // The import keyword is used to declare the packages that are used by the code in the file.
-// "fmt" and "os" are go's"Standard Packages",
-// while "len" is a built in Package.
+// Go does not allows unused imports.i.e.you can not import a package,and later not use it. 
+
+
 
 // import example good:
 // Let use xecute this program, which intends to receive just 2 input prameters:
+
+// "fmt" and "os" are go's "Standard Packages",
+// while "len" is a built in Package.
+
 //--------------------------------------------
 package main
 
