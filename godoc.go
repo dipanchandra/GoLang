@@ -17,12 +17,29 @@ bash: godoc: command not found
 //Which of course happened as I did not have godoc installed on my system !
 
 //However, the following bit eas executing fine,as it is supposed toshow me documentation form the Go files I have, which I did 
-//..not had 
-//..till the time this post was being written..
+//..not had in my 'pwd'
 
+[nabodip@GyanHouse ~]$ pwd
+/home/nabodip
 [nabodip@GyanHouse ~]$ go doc
 doc: no buildable Go source files in /home/nabodip
 exit status 1
+
+//Now, it was interesting to see the actual worth of "go doc" fromthe actualdirectory, housing my Go work till date:
+
+nabodip@GyanHouse ~]$ cd /home/nabodip/student/golang/codes;
+[nabodip@GyanHouse codes]$ ls -lrth *.go
+-rw-rw-r--. 1 nabodip nabodip  75 Apr 28 05:22 main.go
+-rw-rw-r--. 1 nabodip nabodip  77 Apr 29 07:05 main_error.go
+-rw-rw-r--. 1 nabodip nabodip 157 Apr 30 05:05 import_example.go
+-rw-rw-r--. 1 nabodip nabodip  95 Apr 30 05:23 import_play.go
+-rw-rw-r--. 1 nabodip nabodip  95 Apr 30 05:25 import_play_1.go
+-rw-rw-r--. 1 nabodip nabodip 107 Apr 30 05:26 import_play_2.go
+[nabodip@GyanHouse codes]$ 
+[nabodip@GyanHouse codes]$ go doc
+doc: found packages main (import_example.go) and mains (main_error.go) in /home/nabodip/student/golang/codes
+exit status 1
+
 
 //while the following worked from command prompt:
 [nabodip@GyanHouse ~]$ go doc fmt Println
