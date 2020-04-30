@@ -32,3 +32,6 @@ Installed:
   golang-godoc.i686 1:0-15.1.git9deed8c.fc24                                                                                  
 
 Complete!
+
+
+// Once installation is complete, launch the godoc service :
