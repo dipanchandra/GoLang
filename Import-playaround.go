@@ -1,3 +1,5 @@
+// Go does not allows unused imports.i.e.you can not import a package,and later not use it.
+
 // Play#1 :
 // What happens when you import a package and do not use it ?
 
