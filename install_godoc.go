@@ -35,3 +35,13 @@ Complete!
 
 
 // Once installation is complete, launch the godoc service :
+
+[nabodip@GyanHouse codes]$ godoc -http=:6060
+2020/05/01 04:52:38 updateMetadata: open /usr/lib/golang/doc: no such file or directory
+2020/05/01 04:52:38 updateMetadata: open /usr/lib/golang/doc: no such file or directory
+
+//and launch  
+http://localhost:6060/
+//from browser
+
+You should get the web-server launched successfully now :)
