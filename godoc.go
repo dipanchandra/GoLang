@@ -16,7 +16,7 @@ bash: godoc: command not found
 [1]+  Exit 127                godoc -http=:6060
 //Which of course happened as I did not have godoc installed on my system !
 
-//However, the following bit eas executing fine,as it is supposed toshow me documentation form the Go files I have, which I did 
+//However, the following bit eas executing fine,as it is supposed to show me documentation form the Go files I have, which I did 
 //..not had in my 'pwd'
 
 [nabodip@GyanHouse ~]$ pwd
@@ -40,8 +40,7 @@ nabodip@GyanHouse ~]$ cd /home/nabodip/student/golang/codes;
 doc: found packages main (import_example.go) and mains (main_error.go) in /home/nabodip/student/golang/codes
 exit status 1
 
-
-//while the following worked from command prompt:
+//at the same time, the following worked from command prompt:
 [nabodip@GyanHouse ~]$ go doc fmt Println
 func Println(a ...interface{}) (n int, err error)
     Println formats using the default formats for its operands and writes to
@@ -50,4 +49,3 @@ func Println(a ...interface{}) (n int, err error)
     encountered.
 
 //So, just like other wise people, "install_godoc.go" was performed..
-
