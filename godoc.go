@@ -3,7 +3,7 @@
 
 godoc -http=:6060
 
-//after it you need to visti the following from your browser:
+//after it you need to visit the following from your browser:
 
 http://localhost:6060
 
@@ -23,6 +23,14 @@ bash: godoc: command not found
 [nabodip@GyanHouse ~]$ go doc
 doc: no buildable Go source files in /home/nabodip
 exit status 1
+
+//while the following worked from command prompt:
+[nabodip@GyanHouse ~]$ go doc fmt Println
+func Println(a ...interface{}) (n int, err error)
+    Println formats using the default formats for its operands and writes to
+    standard output. Spaces are always added between operands and a newline is
+    appended. It returns the number of bytes written and any write error
+    encountered.
 
 //So, just like other wise people, "install_godoc.go" was performed..
 
