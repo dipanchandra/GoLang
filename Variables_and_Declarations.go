@@ -67,6 +67,7 @@ func main () {
 
 
 // Declaring multiple variables in same line:
+// Program Name : run var_and_dec_same_line.go
 package main
 
 import (
@@ -104,3 +105,38 @@ func getAge() int{
 //Output:
 [nabodip@GyanHouse codes]$ go run var_and_dec_fun.go
 My age is 23 years.
+
+
+
+// Declaring a variablebut not using it in code :
+// Program Name : var_and_dec_same_line_dec_not_use.go
+
+package main
+
+import (
+	"fmt"
+)
+
+func main(){
+	country,year := "India", 1947
+	fmt.Printf("%s got Independence.\n", country)
+}
+
+//Output:
+[nabodip@GyanHouse codes]$ go run  var_and_dec_same_line_dec_not_use.go
+# command-line-arguments
+./var_and_dec_same_line_dec_not_use.go:8: year declared and not used
+
+//Program did not compile, because the variable "year" was declared, but was not used later in the program.
+
+
+//So, final takeaways:
+
+// For declaring avariable to its zero value:
+	var NAME TYPE
+// For declaring and assigning a specific value:
+	NAME := VALUE
+// For assigning new value to a previously declared variable
+	NAME = VALUE
+
+
