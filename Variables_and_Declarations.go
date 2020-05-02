@@ -58,4 +58,49 @@ func main () {
 [nabodip@GyanHouse codes]$ go run var_and_dec.go
 # command-line-arguments
 ./var_and_dec.go:9: no new variables on left side of :=
+// The compiler complains out with the above error. Note that when the variable is declared first, that time:= is used, but on 
+// subsequent assignments, the operator = is used. 
 
+
+// Q. Why does it says : " no new variable[s] on left side of := " ?
+// A. Reason being that Go lets us assign multiple variables using either "=" or ":=".
+
+
+// Declaring multiple variables in same line:
+package main
+
+import (
+	"fmt"
+)
+
+func main(){
+	country,year := "India", 1947
+	fmt.Printf("%s got Independence in the year %d.\n", country,year)
+}
+
+//Output:
+[nabodip@GyanHouse codes]$ go run var_and_dec_same_line.go 
+India got Independence in the year 1947.
+
+
+// := works well while returning a value from a function as well:
+// Program Name : var_and_dec_fun.go
+
+package main
+
+import (
+	"fmt"
+)
+
+func main(){
+	age := getAge()
+	fmt.Printf("My age is %d years.\n", age)
+}
+
+func getAge() int{
+	return 23
+}
+
+//Output:
+[nabodip@GyanHouse codes]$ go run var_and_dec_fun.go
+My age is 23 years.
