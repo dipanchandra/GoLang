@@ -136,7 +136,7 @@ func main(){
 	var NAME TYPE
 // For declaring and assigning a specific value:
 	NAME := VALUE
-// For assigning new value to a previously declared variable
+// For assigning new value to a previously declared variable:
 	NAME = VALUE
 
 
